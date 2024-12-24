@@ -95,21 +95,7 @@ st.write(
 )
 
 # Create an OpenAI client.
-!pip install -qU langchain-openai langchain-community chromadb
-!pip install openai==1.55.3 httpx==0.27.2 --force-reinstall --quiet
-import os
-os.kill(os.getpid(), 9)
-import os
-from langchain_openai import ChatOpenAI
-# lanchain_openai: API를 사용하기 위해서 본래 필요한 주소, 파라미터 등 수작업을 자동화.
-
-os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY") or "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" #"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"
-
-
-llm = ChatOpenAI(
-    openai_api_key=os.environ["OPENAI_API_KEY"],
-    model_name='gpt-4o-mini' # 이미지 처리를 하고 싶다면 50
-)
+client = OpenAI(api_key="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")
 
 from langchain.schema import (
     SystemMessage,
