@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 from openai import OpenAI
+pip install streamlit langchain-openai
 
 # 데이터프레임 생성 (CSV 파일을 불러오는 부분)
 def load_books():
@@ -64,7 +65,7 @@ def recommend_books(category, df):
 st.title("💬 책 속에 답이 있다")
 st.write(
     "각자 고민의 무게를 견디며 살아가는 현대인들. 친구나 동료에게 자신의 고민을 말해보아도, 해결되는 것 같지 않을 때. 같은 고민을 하는 사람들은 어떤 책에서 해결의 실마리를 얻고 있을까?"
-    "고민을 말하면 최근 베스트셀러 100권 중에서 얻을 수 있는 지혜를 알아서 나눠주는 챗봇이 있다면?! 당장 사용해보자. "
+    "고민을 말하면 최근 베스트셀러 529권 중에서 얻을 수 있는 지혜를 알아서 나눠주는 챗봇이 있다면?! 당장 사용해보자. "
     "아래 대화창을 통해 대화를 시도해보세요."
 )
 
