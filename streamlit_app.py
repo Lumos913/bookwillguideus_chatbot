@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 from openai import OpenAI
-pip install streamlit langchain-openai
 
 # 데이터프레임 생성 (CSV 파일을 불러오는 부분)
 def load_books():
